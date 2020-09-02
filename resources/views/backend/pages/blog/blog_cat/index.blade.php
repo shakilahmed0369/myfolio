@@ -8,7 +8,7 @@
     <nav class="breadcrumb pd-0 mg-0 tx-12">
       <a class="breadcrumb-item" href="index.html">Bracket</a>
       <a class="breadcrumb-item" href="#">Tables</a>
-      <span class="breadcrumb-item active">Data Table</span>
+      <span class="breadcrumb-item active">Blog Category List</span>
     </nav>
   </div><!-- br-pageheader -->
   <div class="pd-x-20 pd-sm-x-30 pd-t-20 pd-sm-t-30">

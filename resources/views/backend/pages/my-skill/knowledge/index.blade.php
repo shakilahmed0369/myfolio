@@ -12,7 +12,7 @@
     </nav>
   </div><!-- br-pageheader -->
   <div class="pd-x-20 pd-sm-x-30 pd-t-20 pd-sm-t-30">
-    <h4 class="tx-gray-800 mg-b-5">Data Table</h4>
+    <h4 class="tx-gray-800 mg-b-5">Knowlege Lists</h4>
     <p class="mg-b-0">DataTables is a plug-in for the jQuery Javascript library.</p>
   </div>
 

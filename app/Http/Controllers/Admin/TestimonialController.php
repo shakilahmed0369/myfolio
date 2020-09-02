@@ -54,7 +54,7 @@ class TestimonialController extends Controller
             //file name to save
             $fileName = 'testimonial'.rand(0,1000).'.jpg';
             $fileNameToStore = $fileName;
-            //File save locaton
+            //File save location
             $path = $request->file('testi_image')->storeAs('public/images/testimonial/', $fileNameToStore);
         }
 
