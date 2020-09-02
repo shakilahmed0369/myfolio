@@ -1,0 +1,69 @@
+
+/*Extra fixes*/
+
+/*Pagination css*/
+.page-item {
+	
+	display: inline !important;
+	cursor: pointer;
+}
+.page-item {
+	padding: 5px 5px !important;
+	background: #78cc6d !important;
+}
+.page-item a {
+	padding: 5px 5px !important;
+	background: #78cc6d !important;
+	color: #31313a;
+}
+.page-item:first-child {
+	margin-right: 5px;
+	color: #31313a;
+}
+
+.page-item.active {
+	background: #dedee0 !important;
+	color: #31313a;
+
+}
+.page-item .page-link {
+	padding: 5px 10px !important;
+}
+/*Pagination css End*/
+
+ /* The alert message box */
+.alert {
+padding: 20px;
+background-color: #78cc6d; /* Green */
+color: white;
+margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+margin-left: 15px;
+color: white;
+font-weight: bold;
+float: right;
+font-size: 22px;
+line-height: 20px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+color: black;
+} 
+
+/*
+form padding bug fix
+*/
+@media (max-width: 560px) {
+.card-wrap .content.contacts .row .row .col.col-d-6:nth-child(1) {
+	padding-right: 30px
+}
+.card-wrap .content.contacts .row .row .col.col-d-6:nth-child(2) {
+	padding-left: 30px
+}
+}
