@@ -64,7 +64,7 @@ class ProfileController extends Controller
             $fileName = 'avatar'.rand(0,1000).'.jpg';
             $fileNameToStore = $fileName;
             //File save location
-            $path = $request->file('image')->storeAs('public/images/profile', $fileNameToStore);
+            $path = $request->file('image')->storeAs('images/profile', $fileNameToStore);
         }
 
         if($request->hasFile('cover_image')){
@@ -75,7 +75,7 @@ class ProfileController extends Controller
              $fileName = 'cover'.rand(0,1000).'.jpg';
              $fileNameToStore_c = $fileName;
              //File save location
-             $path = $request->file('cover_image')->storeAs('public/images/cover', $fileNameToStore_c);
+             $path = $request->file('cover_image')->storeAs('images/cover', $fileNameToStore_c);
         }
 
         // updating in database
@@ -93,5 +93,14 @@ class ProfileController extends Controller
         return redirect()->back();
     }
 
-
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        //
+    }
 }

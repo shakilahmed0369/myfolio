@@ -78,7 +78,7 @@
       <div class="dropdown">
         <a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
           <span class="logged-name hidden-md-down">{{ Auth::user()->name }}</span>
-          <img src="{{ asset('storage/images/profile/'.Auth::user()->image) }}" class="wd-32 rounded-circle" alt="">
+          <img style="height: 30px; object-fit:cover;" src="{{ asset('storage/images/profile/'.Auth::user()->image) }}" class="wd-32 rounded-circle" alt="">
           <span class="square-10 bg-success"></span>
         </a>
         <div class="dropdown-menu dropdown-menu-header wd-200">

@@ -18,7 +18,7 @@
 
         <!-- profile photo -->
         <div class="image">
-            <img src="{{ asset('storage/images/profile/'.$profile->image) }}" alt="" />
+            <img style="object-fit: cover; height:150px;" src="{{ asset('storage/images/profile/'.$profile->image) }}" alt="" />
         </div>
 
         <!-- profile titles -->

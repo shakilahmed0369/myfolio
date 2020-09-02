@@ -26,7 +26,7 @@
         <div class="content works">
 
             <!-- title -->
-            <div class="title">Recent Works</div>
+            <div class="title">Work</div>
 
             <!-- content -->
             <div class="row grid-items">
@@ -38,7 +38,7 @@
             </div>
 
             <hr style="margin-top: 20px; margin-bottom:20px">
-            <div class="title">Recent Works</div>
+            <div class="title">{{ $work->title }}</div>
             <div class="col col-d-12 grid-item">
                 <div style="margin-top: 20px; margin-bottom:20px">
                     {!! $work->description !!}

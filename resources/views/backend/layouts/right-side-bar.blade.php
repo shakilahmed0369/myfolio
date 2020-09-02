@@ -19,28 +19,6 @@
 
       <label class="sidebar-label pd-x-25 mg-t-25">Events Calendar</label>
       <div class="datepicker sidebar-datepicker"></div>
-
-
-      <label class="sidebar-label pd-x-25 mg-t-25">Event Today</label>
-      <div class="pd-x-25">
-        <div class="list-group sidebar-event-list mg-b-20">
-          <div class="list-group-item">
-            <div>
-              <h6 class="tx-white tx-13 mg-b-5 tx-normal">Roven's 32th Birthday</h6>
-              <p class="mg-b-0 tx-white tx-12 op-2">2:30PM</p>
-            </div>
-            <a href="" class="more"><i class="icon ion-android-more-vertical tx-18"></i></a>
-          </div><!-- list-group-item -->
-          <div class="list-group-item">
-            <div>
-              <h6 class="tx-white tx-13 mg-b-5 tx-normal">Regular Workout Schedule</h6>
-              <p class="mg-b-0 tx-white tx-12 op-2">7:30PM</p>
-            </div>
-            <a href="" class="more"><i class="icon ion-android-more-vertical tx-18"></i></a>
-          </div><!-- list-group-item -->
-        </div><!-- list-group -->
-
-        <a href="" class="btn btn-block btn -secondary tx-uppercase tx-11 tx-spacing-2">+ Add Event</a>
         <br>
       </div>
 

@@ -59,7 +59,7 @@
                                 </a>
                             </div>
                             <div class="desc">
-                                <a href="" class="name">{{ $work->title }}</a>
+                                <a href="{{ route('frontend.show.work', $work->id) }}" class="name">{{ $work->title }}</a>
                                 <div class="category">{{ $work->work_cat->name }}</div>
                             </div>
                         </div>

@@ -47,7 +47,7 @@ class ClientController extends Controller
             $fileName = 'client_logo'.rand(0,1000).'.jpg';
             $fileNameToStore = $fileName;
             //File save location
-            $path = $request->file('client_logo')->storeAs('public/images/client_logo/', $fileNameToStore);
+            $path = $request->file('client_logo')->storeAs('images/client_logo/', $fileNameToStore);
         }
 
         $store = new Client();

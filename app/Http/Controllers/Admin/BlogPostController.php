@@ -63,7 +63,7 @@ class BlogPostController extends Controller
             //saving the original image on work_image dir
             $image_resize = Image::make($image->getRealPath());
             //resizing image for thumbnail and saving to thumbnail dir
-            $image_resize->fit( 800,375);
+            $image_resize->fit( 800, 375 );
             $image_resize->save(public_path('storage/images/blog/'.$filename), 80, 'jpg');
             
         }
