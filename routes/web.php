@@ -19,8 +19,6 @@ use Illuminate\Support\Facades\Route;
  * Frontend routs
 */
 
-// Url artisan command route
-Route::get('/artisan/{command}', 'ArtisanController@command');
 
 Route::group(['namespace' => 'Frontend'], function () {
     // About route
