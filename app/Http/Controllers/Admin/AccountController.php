@@ -30,7 +30,7 @@ class AccountController extends Controller
             toastr()->success('Account Update Successfully!');
             return redirect()->back();
         }else{
-            toastr()->warning('Password dosent match');
+            toastr()->warning('Password does not match');
             return redirect()->back();
         }
         $user->save();
