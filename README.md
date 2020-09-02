@@ -1,4 +1,4 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+![Blue Green Meetup Event Events Website](https://user-images.githubusercontent.com/51516043/91981299-6cfb6900-ed4a-11ea-990c-faeae0e354a1.jpg)
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -6,6 +6,15 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
+
+## Installation
+
+- Run `composer install` or ```php composer.phar install```
+- Run `cp .env.example .env`
+- Run `php artisan key:generate` 
+- Run `php artisan migrate`
+- Run `php artisan db:seed` to run seeders.
+- Run `php artisan serve`
 
 ## About Laravel
 
