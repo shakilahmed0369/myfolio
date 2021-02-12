@@ -52,6 +52,7 @@
         <!--
 						Services
 					-->
+    @empty($services)
         <div class="content services">
 
             <!-- title -->
@@ -74,6 +75,9 @@
             </div>
 
         </div>
+    @endempty
+
+    @empty($funFacts)
 
         <!--
 						Fun Fact
@@ -99,7 +103,10 @@
             </div>
 
         </div>
+            
+    @endempty
 
+    @empty($clients)
         <!--
 						Clients
 					-->
@@ -131,6 +138,10 @@
         <!--
 						Testimonials
 					-->
+    @endempty
+        
+    @empty($testimonials)
+
         <div class="content testimonials">
 
             <!-- title -->
@@ -172,6 +183,8 @@
             </div>
 
         </div>
+            
+    @endempty
 
     </div>
 </div>
