@@ -16,11 +16,12 @@
         <!--Message alart--->
         @include('backend.layouts.messages')
         <!--Message alart End--->
-      <form action="{{ route('admin.works.store') }}" method="POST" enctype="multipart/form-data">
+
+      <form action="{{ route('admin.works.store') }}" method="POST" enctype="multipart/form-data" >
         @csrf
         <div class="form-group">
           <label class=" text-primary" for="title">Projetct Image</label>
-          <input name="work_image" type="file" class="form-control" id="work_image">
+          <input name="work_image[]" type="file" class="form-control" id="work_image" multiple>
         </div>
 
         <div class="form-group">
@@ -56,6 +57,7 @@
         </div>
   
       </form>
+    
     </div>
 
       

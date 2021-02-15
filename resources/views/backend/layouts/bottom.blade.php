@@ -23,8 +23,10 @@
     <script src="{{ asset('backend/js/bracket.js') }}"></script>
     <script src="{{ asset('backend/js/ResizeSensor.js') }}"></script>
     <script src="{{ asset('backend/js/dashboard.js') }}"></script>
-
-
+    <script src="{{ asset('backend/lib/imageupload/image-uploader.min.js') }}"></script>
+    <script>
+      $('.input-images').imageUploader();
+    </script>
     <script>
       $(function(){
         'use strict'
@@ -75,4 +77,5 @@
     }
   });
 </script>
+
 

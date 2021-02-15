@@ -16,13 +16,31 @@ body {
 	background: #26262d;
 }
 
+
 ::-webkit-scrollbar-thumb {
 	background-color: rgba(255,255,255,0.25);
 }
 
 .background {
-	background-color: #26262d !important;
+	/* background-color: #26262d !important; */
+	background: url("https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1355&q=80");
+	color: #eee;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	perspective: 1000px;
+	perspective-origin: 50% 50%;
+	animation: animation 100s linear infinite;
 }
+
+@keyframes animation {
+	100%{
+	 background-position:0px 1000px;
+   }
+ }
+
 
 .border-line-v:before {
 	background: -moz-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);

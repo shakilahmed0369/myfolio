@@ -30,11 +30,28 @@
 
             <!-- content -->
             <div class="row grid-items">
-                <div class="col col-d-12 grid-item">
-                    <img width="100%"
-                        src="{{ asset('storage/images/works/work_image/'.$work->work_image) }}"
-                        alt="">
-                </div>
+                
+
+                @if (! json_decode($work->work_image))
+                    <div class="col col-d-12 grid-item">
+                        <img width="100%"
+                            src="{{ asset('storage/images/works/work_image/'.$work->work_image) }}"
+                            alt="">
+                    </div>  
+                @else  
+
+                        @foreach (json_decode($work->work_image) as $image)
+                        <div class="col col-d-12 grid-item">
+                            <img width="100%"
+                                src="{{ asset('storage/images/works/work_image/'.$image) }}"
+                                alt="">
+                        </div> 
+                        @endforeach
+   
+                        
+                      
+                @endif
+
             </div>
 
             <hr style="margin-top: 20px; margin-bottom:20px">

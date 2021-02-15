@@ -38,8 +38,8 @@
   <link href="{{ asset('backend/lib/jquery-switchbutton/jquery.switchButton.css') }}" rel="stylesheet">
   <link href="{{ asset('backend/lib/rickshaw/rickshaw.min.css" rel="stylesheet') }}">
   <link href="{{ asset('backend/lib/datatables/jquery.dataTables.css') }}" rel="stylesheet">
-  <link href="{{ asset('backend/lib/chartist/chartist.css') }}" rel="stylesheet">
-  @toastr_css
+  <link rel="stylesheet" href="{{ asset('backend/lib/imageupload/image-uploader.min.css') }}">
+
   <!-- Bracket CSS -->
   <link rel="stylesheet" href="{{ asset('backend/css/bracket.css') }}">
 </head>

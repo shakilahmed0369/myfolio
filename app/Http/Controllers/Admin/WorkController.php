@@ -19,7 +19,8 @@ class WorkController extends Controller
     public function index()
     {
 
-        $works = Work::all();
+        $works = Work::find(8);
+       
         return view('backend.pages.works.index', compact('works'));
     }
 
@@ -31,6 +32,7 @@ class WorkController extends Controller
     public function create()
     {
         $work_cats = Work_cat::all();
+        
         return view('backend.pages.works.create', compact('work_cats'));
     }
 
@@ -42,35 +44,43 @@ class WorkController extends Controller
      */
     public function store(Request $request)
     {
+        
         $validateData = $request->validate([
-            'work_image'  => 'required|image',
+            'work_image'  => 'required',
             'title'       => 'required',
             'work_cat_id' => 'required'
         ]);
-        
-            //handle file
+
+        //image name collector
+        $imageName = [];
+
+        foreach($request->file('work_image') as $image){
+
+        //handle file
           if($request->hasFile('work_image')){
 
-            $image = $request->file('work_image');
+            $image = $image;
             //original image name
             $fileNameWithExt = $image->getClientOriginalName();
             //get only name 
             $fileOnlyName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
             //get the extension
-            $fileExt = $request->file('work_image')->getClientOriginalExtension();
+            $fileExt = $image->getClientOriginalExtension();
             //file name
-            $filename = $fileOnlyName.'-'.time().'.'.$fileExt;
+            $filename = str_replace(' ', '', $fileOnlyName.'-'.time().'.'.$fileExt);
             //saving the original image on work_image dir
             $image_resize = Image::make($image->getRealPath());
             $image_resize->save(public_path('storage/images/works/work_image/'.$filename), 80,'jpg');
             //resizing image for thumbnail and saving to thumbnail dir
             $image_resize->fit(600, 800, null, 'top');
             $image_resize->save(public_path('storage/images/works/thumbnail/'.$filename), 50, 'jpg');
-            
+            $imageName[] = $filename; 
         }
+        }
+          
         //storing all data in database
         $store = new Work();
-        $store->work_image = $filename;
+        $store->work_image = json_encode($imageName);
         $store->title = $request->title;
         $store->link = $request->link;
         $store->work_cat_id = $request->work_cat_id;

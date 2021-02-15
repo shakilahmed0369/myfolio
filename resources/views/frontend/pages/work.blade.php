@@ -47,7 +47,12 @@
             <div class="row grid-items border-line-v">
                 @foreach($works as $work)
                     <div class="col col-d-6 col-t-6 col-m-12 grid-item {{ $work->work_cat->name }} border-line-h">
+                        
                         <div class="box-item">
+                           @php
+                               
+                           @endphp  
+                           @if (! json_decode($work->work_image))
                             <div class="image">
                                 <a href="{{ route('frontend.show.work', $work->id) }}"
                                     class="">
@@ -58,6 +63,26 @@
                                     </span>
                                 </a>
                             </div>
+                            @else
+                            @php
+                                $image = json_decode($work->work_image);
+                                $imageName = $image[0];
+                            @endphp
+                           
+                            <div class="image">
+                                <a href="{{ route('frontend.show.work', $work->id) }}"
+                                    class="">
+                                    <img src="{{ asset('storage/images/works/thumbnail/'.$imageName) }}"
+                                        alt="" />
+                                    <span class="info">
+                                        <span class="ion ion-image"></span>
+                                    </span>
+                                </a>
+                            </div>
+                           
+                           @endif
+
+                    
                             <div class="desc">
                                 <a href="{{ route('frontend.show.work', $work->id) }}" class="name">{{ $work->title }}</a>
                                 <div class="category">{{ $work->work_cat->name }}</div>
