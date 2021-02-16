@@ -29,6 +29,6 @@ class Email extends Mailable
      */
     public function build()
     {
-        return $this->subject('Mail from sk last-folio')->view('frontend.email.email');
+        return $this->subject('Mail from Myfolio')->view('frontend.email.email');
     }
 }
