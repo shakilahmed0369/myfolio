@@ -19,7 +19,7 @@ class WorkController extends Controller
     public function index()
     {
 
-        $works = Work::find(8);
+        $works = Work::all();
        
         return view('backend.pages.works.index', compact('works'));
     }
@@ -72,7 +72,7 @@ class WorkController extends Controller
             $image_resize = Image::make($image->getRealPath());
             $image_resize->save(public_path('storage/images/works/work_image/'.$filename), 80,'jpg');
             //resizing image for thumbnail and saving to thumbnail dir
-            $image_resize->fit(600, 800, null, 'top');
+            $image_resize->fit(1200, 800, null, 'top');
             $image_resize->save(public_path('storage/images/works/thumbnail/'.$filename), 50, 'jpg');
             $imageName[] = $filename; 
         }
@@ -117,42 +117,42 @@ class WorkController extends Controller
         $updateWork = Work::find($id);
 
         $validateData = $request->validate([
-            'work_image'  => 'image',
             'title'       => 'required',
             'work_cat_id' => 'required'
         ]);
-        
-            //handle file
-          if($request->hasFile('work_image')){
-            //validating image if image isset
-            $validateData = $request->validate([
-                'work_image'  => 'image',
-            ]);
-            // removing old image
-            File::delete(public_path('storage/images/works/thumbnail/'. $updateWork->work_image));
-            File::delete(public_path('storage/images/works/work_image/'. $updateWork->work_image));
 
-            //request file
-            $image = $request->file('work_image');
-            //original image name
-            $fileNameWithExt = $image->getClientOriginalName();
-            //get only name 
-            $fileOnlyName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
-            //get the extension
-            $fileExt = $request->file('work_image')->getClientOriginalExtension();
-            //file name
-            $filename = $fileOnlyName.'-'.time().'.'.$fileExt;
-            //saving the original image on work_image dir
-            $image_resize = Image::make($image->getRealPath());
-            $image_resize->save(public_path('storage/images/works/work_image/'.$filename), 80,'jpg');
-            //resizing image for thumbnail and saving to thumbnail dir
-            $image_resize->fit(600, 800, null, 'top');
-            $image_resize->save(public_path('storage/images/works/thumbnail/'.$filename), 50, 'jpg');  
-        }
+         //image name collector
+         $imageName = [];
+ 
+         //handle file
+           if($request->hasFile('work_image')){
+               foreach($request->file('work_image') as $image){
+ 
+             $image = $image;
+             //original image name
+             $fileNameWithExt = $image->getClientOriginalName();
+             //get only name 
+             $fileOnlyName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+             //get the extension
+             $fileExt = $image->getClientOriginalExtension();
+             //file name
+             $filename = str_replace(' ', '', $fileOnlyName.'-'.time().'.'.$fileExt);
+             //saving the original image on work_image dir
+             $image_resize = Image::make($image->getRealPath());
+             $image_resize->save(public_path('storage/images/works/work_image/'.$filename), 80,'jpg');
+             //resizing image for thumbnail and saving to thumbnail dir
+             $image_resize->fit(1200, 800, null, 'top');
+             $image_resize->save(public_path('storage/images/works/thumbnail/'.$filename), 50, 'jpg');
+             $imageName[] = $filename; 
+         }
+         }
+           
         //storing all data in database
         if($request->hasFile('work_image')){
-            $updateWork->work_image = $filename;
+            $updateWork->work_image = json_encode($imageName);
         }
+
+
         $updateWork->title = $request->title;
         $updateWork->link = $request->link;
         $updateWork->work_cat_id = $request->work_cat_id;

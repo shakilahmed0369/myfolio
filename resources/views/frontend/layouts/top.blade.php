@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="{{ asset('frontend/css/blogs.css') }}" />
     <link rel="stylesheet" href="{{ asset('frontend/css/animate.css') }}" />
     <link rel="stylesheet" href="{{ asset('frontend/css/owl.carousel.css') }}" />
+    <link rel="stylesheet" href="{{ asset('frontend/css/magnific-popup.css') }}" />
 
     <!--
 		Background Gradient

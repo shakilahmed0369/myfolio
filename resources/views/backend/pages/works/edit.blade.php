@@ -11,7 +11,6 @@
   <div class="br-pagebody mg-t-5 pd-x-30">
     <div class="br-section-wrapper row justify-content-center">
 
-      
       <div class="col-md-12">
         <!--Message alart--->
         @include('backend.layouts.messages')
@@ -23,7 +22,7 @@
           <div class="col-md-6">
             <div class="form-group">
               <label class=" text-primary" for="title">Projetct Image</label>
-              <input name="work_image" type="file" class="form-control" id="work_image">
+              <input name="work_image[]" type="file" class="form-control" id="work_image" multiple>
             </div>
 
             

@@ -2,9 +2,7 @@
 @section('content')
 
 
-<!--
-				Card - Works
-			-->
+<!--Card - Works-->
 <div class="card-inner animated active" id="works-card">
     {{-- preloader --}}
     <div class="preloader">
@@ -20,9 +18,7 @@
     {{-- preloader end --}}
     <div class="card-wrap">
 
-        <!--
-						Works
-					-->
+        <!--Works-->
         <div class="content works">
 
             <!-- title -->
@@ -30,28 +26,25 @@
 
             <!-- content -->
             <div class="row grid-items">
-                
-
                 @if (! json_decode($work->work_image))
                     <div class="col col-d-12 grid-item">
+                        <a class="test-popup-link" href="{{ asset('storage/images/works/work_image/'.$image) }}">
                         <img width="100%"
                             src="{{ asset('storage/images/works/work_image/'.$work->work_image) }}"
                             alt="">
+                        </a>
                     </div>  
                 @else  
-
-                        @foreach (json_decode($work->work_image) as $image)
+                    @foreach (json_decode($work->work_image) as $image)
                         <div class="col col-d-12 grid-item">
+                            <a class="test-popup-link" href="{{ asset('storage/images/works/work_image/'.$image) }}">
                             <img width="100%"
                                 src="{{ asset('storage/images/works/work_image/'.$image) }}"
                                 alt="">
+                            </a>
                         </div> 
-                        @endforeach
-   
-                        
-                      
+                    @endforeach        
                 @endif
-
             </div>
 
             <hr style="margin-top: 20px; margin-bottom:20px">
@@ -68,7 +61,7 @@
     </div>
     <a href="{{ route('frontend.works') }}"
         style="position: absolute;/*! top: 0; */background: #78c259;z-index: 1111;right: 0;bottom: 0;color: #fff;padding: 2px;"><i
-            class="fas fa-arrow-left"></i> Back</a>
+        class="fas fa-arrow-left"></i> Back</a>
 </div>
 </div>
 @endsection
