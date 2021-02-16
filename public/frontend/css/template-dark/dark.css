@@ -1,10 +1,3 @@
-/**
-*	Ryan - Resume/CV/vCard Template (HTML)
-*	Version: 2.0
-*	Author: beshleyua
-*	Author URL: http://themeforest.net/user/beshleyua
-*	Copyright © Cvio by beshleyua. All Rights Reserved.
-**/
 
 /* TABLE OF CONTENTS
 	1. Template Dark
@@ -23,7 +16,7 @@ body {
 
 .background {
 	/* background-color: #26262d !important; */
-	background: url("https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1355&q=80");
+	background: url("https://images.unsplash.com/photo-1610917689031-0cfdc44036ba?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1534&q=80");
 	color: #eee;
 	width: 100%;
 	height: 100vh;
@@ -37,7 +30,7 @@ body {
 
 @keyframes animation {
 	100%{
-	 background-position:0px 1000px;
+	 background-position:0px -1800px;
    }
  }
 

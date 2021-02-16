@@ -41,7 +41,7 @@
                         <ul>
                             @foreach($skills as $skill)
                                 <li>
-                                    <div class=""><i style="color: #78cc6d;margin-right: 5px;"
+                                    <div class=""><i style="color: #00c1d3;margin-right: 5px;"
                                             class="fas fa-star-of-life"></i> {{ $skill->title }}</div>
                                 </li>
                             @endforeach

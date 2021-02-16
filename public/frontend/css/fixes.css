@@ -9,11 +9,11 @@
 }
 .page-item {
 	padding: 5px 5px !important;
-	background: #78cc6d !important;
+	background: #00c1d3 !important;
 }
 .page-item a {
 	padding: 5px 5px !important;
-	background: #78cc6d !important;
+	background: #00c1d3 !important;
 	color: #31313a;
 }
 .page-item:first-child {
@@ -34,7 +34,7 @@
  /* The alert message box */
 .alert {
 padding: 20px;
-background-color: #78cc6d; /* Green */
+background-color: #00c1d3; /* Green */
 color: white;
 margin-bottom: 15px;
 }

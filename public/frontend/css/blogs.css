@@ -30,7 +30,7 @@
 	color: #626262;
 	font-style: italic;
 	font-weight: 300;
-	border-left: 2px solid #78cc6d;
+	border-left: 2px solid #00c1d3;
 }
 
 .post-box .blog-content ul.list-style {
@@ -55,7 +55,7 @@
 	top: 50%;
 	width: 4px;
 	height: 4px;
-	background: #78cc6d;
+	background: #00c1d3;
 	border-radius: 4px;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
@@ -142,7 +142,7 @@
 	margin: 0;
 	font-size: 14px;
 	line-height: 14px;
-	color: #78cc6d;
+	color: #00c1d3;
 }
 
 .post-box .post-comments li .comment-info .name h6 span {

@@ -116,14 +116,14 @@
 
 .header .top-menu ul li:hover a,
 .header .top-menu ul li.active a {
-	color: #78cc6d;
+	color: #00c1d3;
 }
 
 .header .top-menu ul li:hover a .icon,
 .header .top-menu ul li.active a .icon,
 .header .top-menu ul li:hover a .link,
 .header .top-menu ul li.active a .link {
-	color: #78cc6d;
+	color: #00c1d3;
 }
 
 @media (max-width: 1023px) {
@@ -351,7 +351,7 @@
 .card-started .profile .subtitle {
 	margin: 0 0 15px 0;
 	font-size: 14px;
-	color: #78cc6d;
+	color: #00c1d3;
 	line-height: 14px;
 	font-weight: 400;
 }
@@ -372,7 +372,7 @@
 }
 
 .card-started .profile .social a:hover .ion, .card-started .profile .social a:hover .fab, .card-started .profile .social a:hover .fas {
-	color: #78cc6d;
+	color: #00c1d3;
 }
 
 .card-started .profile .lnk.active.discover .arrow {
@@ -632,7 +632,7 @@
 	height: 60px;
 	text-align: center;
 	font-size: 32px;
-	color: #78cc6d;
+	color: #00c1d3;
 	background: -moz-linear-gradient(-45deg, rgba(120, 204, 109, 0.4) 0%, rgba(120, 204, 109, 0.01) 100%);
 	background: -webkit-linear-gradient(-45deg, rgba(120, 204, 109, 0.4) 0%, rgba(120, 204, 109, 0.01) 100%);
 	background: linear-gradient(135deg, rgba(120, 204, 109, 0.4) 0%, rgba(120, 204, 109, 0.01) 100%);
@@ -694,7 +694,7 @@
 	height: 40px;
 	text-align: center;
 	font-size: 32px;
-	color: #78cc6d;
+	color: #00c1d3;
 }
 
 .pricing-items .pricing-item .icon .ion, .pricing-items .pricing-item .icon .fab, .pricing-items .pricing-item .icon .fas {
@@ -804,7 +804,7 @@
 	height: 60px;
 	text-align: center;
 	font-size: 32px;
-	color: #78cc6d;
+	color: #00c1d3;
 }
 
 .fuct-items .fuct-item .icon .ion, .fuct-items .fuct-item .icon .fab, .fuct-items .fuct-item .icon .fas {
@@ -853,7 +853,7 @@
 	width: 40px;
 	height: 40px;
 	font-size: 32px;
-	color: #78cc6d;
+	color: #00c1d3;
 	background: #ffffff;
 }
 
@@ -888,11 +888,11 @@
 }
 
 .resume-items .resume-item.active .date {
-	color: #78cc6d;
+	color: #00c1d3;
 }
 
 .resume-items .resume-item.active .date:before {
-	background: #78cc6d;
+	background: #00c1d3;
 }
 
 .resume-items .resume-item .date {
@@ -982,7 +982,7 @@
 	top: 0;
 	width: 0%;
 	height: 100%;
-	background: #78cc6d;
+	background: #00c1d3;
 	transition: all 0.3s ease 0s;
 	-moz-transition: all 0.3s ease 0s;
 	-webkit-transition: all 0.3s ease 0s;
@@ -1013,7 +1013,7 @@
 }
 
 .content.works .filter-menu .f_btn.active {
-	color: #78cc6d;
+	color: #00c1d3;
 }
 
 .content.works .filter-menu .f_btn label {
@@ -1379,13 +1379,13 @@
 	vertical-align: top;
 	width: 10px;
 	height: 10px;
-	border: 1px solid #78cc6d;
+	border: 1px solid #00c1d3;
 	border-radius: 100%;
 	-webkit-border-radius: 100%;
 }
 
 .revs-carousel .owl-dot.active {
-	background: #78cc6d;
+	background: #00c1d3;
 }
 
 .revs-item .text {
@@ -1520,7 +1520,7 @@
 	top: 0;
 	display: inline-block;
 	font-family: "Ionicons";
-	color: #78cc6d;
+	color: #00c1d3;
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -1575,7 +1575,7 @@
 }
 
 .skills-list.dotted ul li .progress .da span {
-	background: #78cc6d!important;
+	background: #00c1d3!important;
 }
 
 .skills-list.circles .progress.p51 .slice, 
@@ -1686,7 +1686,7 @@
 	width: 0.82em;
 	height: 0.82em;
 	clip: rect(0em, 0.5em, 1em, 0em);
-	border: 0.09em solid #78cc6d;
+	border: 0.09em solid #00c1d3;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 	-webkit-transform: rotate(0deg);

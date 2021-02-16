@@ -60,7 +60,7 @@
 
     </div>
     <a href="{{ route('frontend.works') }}"
-        style="position: absolute;/*! top: 0; */background: #78c259;z-index: 1111;right: 0;bottom: 0;color: #fff;padding: 2px;"><i
+        style="position: absolute;/*! top: 0; */background: #00c1d3;z-index: 1111;right: 0;bottom: 0;color: #fff;padding: 2px;"><i
         class="fas fa-arrow-left"></i> Back</a>
 </div>
 </div>

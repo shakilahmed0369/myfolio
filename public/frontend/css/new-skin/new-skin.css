@@ -378,7 +378,7 @@ input[type="submit"] {
 input:focus,
 textarea:focus {
 	color: #323232;
-	border: 2px solid #78cc6d;
+	border: 2px solid #00c1d3;
 }
 
 input.error,
@@ -699,7 +699,7 @@ input[type="file"] {
 	position: relative;
 	margin: 0;
 	display: inline-block;
-	color: #78cc6d;
+	color: #00c1d3;
 	font-size: 16px;
 	line-height: 20px;
 	height: 20px;
@@ -826,12 +826,12 @@ input[type="file"] {
 }
 
 .content .title .first-word {
-	color: #78cc6d;
+	color: #00c1d3;
 }
 
 .content .title::first-letter,
 .content .title .first-letter::first-letter {
-	color: #78cc6d;
+	color: #00c1d3;
 }
 
 .content .post-comments .title .first-word {
@@ -939,7 +939,7 @@ input[type="file"] {
 	float: left;
 	margin-right: 8px;
 	padding: 1px 8px;
-	background: #78cc6d;
+	background: #00c1d3;
 	font-size: 14px;
 	line-height: 20px;
 	color: #fefefe;
@@ -1011,7 +1011,7 @@ input[type="file"] {
 .service-items .service-item .icon {
 	margin: 0 auto;
 	color: #fff!important;
-	background: #78cc6d!important;
+	background: #00c1d3!important;
 }
 
 .service-items .service-item .name {
@@ -1146,7 +1146,7 @@ input[type="file"] {
 }
 
 .resume-items .resume-item.active .date {
-	border-color: #78cc6d;
+	border-color: #00c1d3;
 }
 
 .resume-items .resume-item .date {
@@ -1319,7 +1319,7 @@ input[type="file"] {
 }
 
 .box-item:hover .desc .name {
-	color: #78cc6d;
+	color: #00c1d3;
 }
 
 @media (max-width: 560px) {
